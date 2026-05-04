@@ -101,33 +101,34 @@
             </div>
         </div>
 
-        <div class="max-w-6xl mx-auto pt-12 px-12">
+        <!-- التعديل هنا: زودت ال padding لـ px-6 عشان يدي براح -->
+        <div class="max-w-6xl mx-auto pt-8 md:pt-12 px-6 md:px-12">
             
             <section id="home" class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 mb-24 md:mb-32 relative z-10">
                 <div class="flex-1 text-center md:text-left flex flex-col items-center md:items-start w-full">
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-0">
+                    <h3 class="text-2xl md:text-4xl font-bold text-gray-800 mb-0">
                         Hey friends <span class="wave-emoji animate-wave inline-block">👋</span>
                     </h3>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
+                    <h3 class="text-2xl md:text-4xl font-bold text-gray-800 mb-1">
                         I'm Mohamed Bedier<span class="text-brand">,</span>
                     </h3>
                     
                     <div class="min-h-[100px] w-full flex flex-col justify-start pt-1 items-center md:items-start">
                         <div id="role-container" class="mb-1 fade-transition">
-                            <span class="text-2xl md:text-3xl font-bold text-gray-600 mr-2">a</span>
-                            <span id="dynamic-role" class="scribble-underline font-bold text-brand text-2xl md:text-3xl">Data Analyst</span>
+                            <span class="text-xl md:text-3xl font-bold text-gray-600 mr-2">a</span>
+                            <span id="dynamic-role" class="scribble-underline font-bold text-brand text-xl md:text-3xl">Data Analyst</span>
                         </div>
-                        <p id="dynamic-desc" class="text-lg md:text-xl text-secondary leading-relaxed max-w-2xl font-light fade-transition">
+                        <p id="dynamic-desc" class="text-base md:text-xl text-secondary leading-relaxed max-w-2xl font-light fade-transition mt-2">
                             turning raw data into actionable insights and helping you make smarter decisions.
                         </p>
                     </div>
                     
-                    <div class="pt-4 flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-                        <a href="#contact" class="bg-brand text-white px-8 py-3.5 rounded-xl font-bold hover:bg-orange-500 transition duration-300 w-full md:w-auto text-center text-lg shadow-lg shadow-orange-500/30">Contact Me</a>
-                        <a href="#projects" class="bg-transparent border-2 border-brand text-brand px-8 py-3.5 rounded-xl font-bold hover:bg-brand hover:text-white transition duration-300 w-full md:w-auto text-center text-lg">My Projects</a>
+                    <div class="pt-4 flex flex-row items-center justify-center md:justify-start gap-3 w-full md:w-auto">
+                        <a href="#contact" class="bg-brand text-white px-5 md:px-8 py-3.5 rounded-xl font-bold hover:bg-orange-500 transition duration-300 w-1/2 md:w-auto text-center text-sm md:text-lg shadow-lg shadow-orange-500/30">Contact Me</a>
+                        <a href="#projects" class="bg-transparent border-2 border-brand text-brand px-5 md:px-8 py-3.5 rounded-xl font-bold hover:bg-brand hover:text-white transition duration-300 w-1/2 md:w-auto text-center text-sm md:text-lg">My Projects</a>
                     </div>
 
-                    <div class="pt-5 pl-2 flex gap-6 text-2xl text-gray-400">
+                    <div class="pt-6 flex justify-center md:justify-start gap-6 text-2xl text-gray-400 w-full md:w-auto">
                         <a href="https://www.linkedin.com/in/mohamedabedier" class="hover:text-primary transition"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/mohamedabedier" class="hover:text-primary transition"><i class="fa-brands fa-github"></i></a>
                         <a href="https://facebook.com/mohamedabedier" class="hover:text-[#1877F2] transition"><i class="fa-brands fa-facebook"></i></a>
@@ -150,8 +151,8 @@
                         </div>
 
                         <div class="absolute top-1/2 -right-12 md:top-1/2 md:-right-14 bg-white px-2.5 py-1.5 md:px-4 md:py-2.5 rounded-full shadow-xl border border-gray-100 flex items-center gap-1 md:gap-2 animate-float z-20" style="animation-delay: 2s;">
-                            <span class="text-lg md:text-xl">🗄️</span>
-                            <span class="font-bold text-[10px] md:text-sm text-primary">SQL Expert</span>
+                            <span class="text-lg md:text-xl">⚙️</span>
+                            <span class="font-bold text-[10px] md:text-sm text-primary">Preprocessing</span>
                         </div>
 
                         <div class="absolute -bottom-6 -left-12 md:-bottom-6 md:-left-4 bg-white px-2.5 py-1.5 md:px-4 md:py-2.5 rounded-full shadow-xl border border-gray-100 flex items-center gap-1 md:gap-2 animate-float z-20" style="animation-delay: 3s;">
@@ -162,14 +163,14 @@
                 </div>
             </section>
 
-            <section id="about" class="mb-32 bg-white/80 backdrop-blur-sm p-6 rounded-3xl relative z-10">
-                <h2 class="text-4xl font-bold mb-10">So, Who Am I? 🤔</h2>
+            <section id="about" class="mb-32 bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-3xl relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">So, Who Am I? 🤔</h2>
                 <div class="flex flex-col gap-10">
-                    <div class="flex flex-col md:flex-row gap-10 items-start">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                         <div class="md:w-1/3 w-full">
                             <img src="images/my-pic-2.jpeg" alt="About Me" class="rounded-3xl w-full aspect-square object-cover shadow-md">
                         </div>
-                        <div class="md:w-2/3 w-full space-y-6 text-lg text-secondary leading-relaxed">
+                        <div class="md:w-2/3 w-full space-y-4 md:space-y-6 text-base md:text-lg text-secondary leading-relaxed">
                             <p>Hey friends! 👋 I’m <span class="font-bold">Mohamed Bedier.</span> I don't just look at spreadsheets and numbers—I find the <span class="font-bold">stories</span> hidden within them to help businesses <span class="font-bold">grow and make smarter decisions.</span></p>
                             <p>As a dedicated Data Analyst, my expertise lies in data cleaning, exploratory analysis, and creating dynamic business intelligence reports. <span class="font-bold">I use tools like Python, SQL, Excel, and Power BI </span>to build <span class="font-bold">interactive dashboards</span> that make complex metrics <span class="font-bold">easy to understand</span> at a glance.</p>
                             <p>I take the guesswork out of decision-making by turning raw data into a clear strategic advantage. If you want to <span class="font-bold">transform your data</span> into your most valuable asset, <span class="font-bold">let’s work together.</span></p>
@@ -177,16 +178,16 @@
                     </div>
 
                     <div class="w-full mt-4">
-                        <div class="flex flex-wrap gap-6 border-b border-[#E5E0D8] pb-2">
+                        <div class="flex flex-row overflow-x-auto hide-scrollbar gap-6 border-b border-[#E5E0D8] pb-2 whitespace-nowrap">
                             <button class="tab-btn active text-gray-400 pb-2 transition" onclick="showTab('experience')">Experience</button>
                             <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('education')">Education</button>
                             <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('courses')">Courses</button>
                             <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('languages')">Languages</button>
                         </div>
 
-                        <div id="experience" class="tab-content py-6 grid md:grid-cols-2 gap-4">
-                            
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start md:row-span-2 h-full">
+                        <!-- Experience -->
+                        <div id="experience" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full md:row-span-2">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/depi.png" alt="DEPI Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -204,7 +205,7 @@
                                 </div>
                             </div>
 
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start h-full">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/msp-helwan.jpg" alt="MSP Helwan Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -218,7 +219,7 @@
                                 </div>
                             </div>
 
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start h-full">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/alpha.jpg" alt="Alpha ASU Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -233,8 +234,9 @@
                             </div>
                         </div>
 
-                        <div id="education" class="tab-content py-6 grid md:grid-cols-2 gap-4 hidden">
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                        <!-- Education -->
+                        <div id="education" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left hidden">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/helwan-university.jpg" alt="Helwan Uni Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -249,8 +251,9 @@
                             </div>
                         </div>
 
-                        <div id="courses" class="tab-content py-6 grid md:grid-cols-2 gap-4 hidden">
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                        <!-- Courses -->
+                        <div id="courses" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left hidden">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/mahara-tech.jpg" alt="mahara tech Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -263,7 +266,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/udemy.png" alt="Udemy Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -276,7 +279,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/data-camp.avif" alt="DataCamp Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -289,7 +292,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/deeplearning.jpg" alt="Deep Learning Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -302,7 +305,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="images/logos/yanfaaa.png" alt="Yanfaa Logo" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -317,8 +320,9 @@
                             </div>
                         </div>
 
-                        <div id="languages" class="tab-content py-6 grid md:grid-cols-2 gap-4 hidden">
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                        <!-- Languages (التعديل هنا: رجعناها جنب بعض) -->
+                        <div id="languages" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left hidden">
+                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="https://img.icons8.com/?size=96&id=15502&format=png" alt="Germany Flag" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -327,7 +331,7 @@
                                     <p class="text-sm font-semibold text-brand mb-2">A1 Level</p>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="https://img.icons8.com/?size=96&id=15534&format=png" alt="UK Flag" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -336,7 +340,7 @@
                                     <p class="text-sm font-semibold text-brand mb-2">B1 Level</p>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start">
+                            <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
                                     <img src="https://img.icons8.com/?size=96&id=15521&format=png" alt="Egypt Flag" class="w-full h-full object-contain rounded-lg">
                                 </div>
@@ -354,62 +358,46 @@
                 <div class="columns-1 md:columns-2 gap-6 space-y-6">
                     
                     <div class="break-inside-avoid p-8 pl-0">
-                        <h2 class="text-5xl font-bold leading-tight">How can <br> I help <span class="relative z-10">You?<svg class="absolute w-[120%] h-full -left-2 top-2 -z-10" viewBox="0 0 100 40"><path d="M5,25 Q50,40 95,20" stroke="#5DCDF1" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span></h2>
+                        <h2 class="text-4xl md:text-5xl font-bold leading-tight">How can <br> I help <span class="relative z-10">You?<svg class="absolute w-[120%] h-full -left-2 top-2 -z-10" viewBox="0 0 100 40"><path d="M5,25 Q50,40 95,20" stroke="#5DCDF1" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span></h2>
                     </div>
 
-                    <div class="service-card orange group break-inside-avoid bg-accentBg p-10 rounded-3xl cursor-default">
+                    <div class="service-card orange group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-orange-600 group-hover:!text-orange-600 transition-colors"><i class="fa-solid fa-broom"></i></div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:!text-orange-900 transition-colors">Data Cleaning & Preparation</h3>
-                        <p class="text-secondary group-hover:!text-gray-800 transition-colors">Cleaning, transforming, and organizing raw data to ensure accuracy, consistency, and reliable analysis results.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-orange-900 transition-colors">Data Cleaning & Preparation</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Cleaning, transforming, and organizing raw data to ensure accuracy, consistency, and reliable analysis results.</p>
                     </div>
 
-                    <div class="service-card purple group break-inside-avoid bg-accentBg p-10 rounded-3xl cursor-default">
+                    <div class="service-card purple group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-purple-600 group-hover:!text-purple-600 transition-colors"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:!text-purple-900 transition-colors">Data Analysis & Insights</h3>
-                        <p class="text-secondary group-hover:!text-gray-800 transition-colors">Analyzing datasets to identify trends, patterns, and actionable insights that support smarter business decisions.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-purple-900 transition-colors">Data Analysis & Insights</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Analyzing datasets to identify trends, patterns, and actionable insights that support smarter business decisions.</p>
                     </div>
 
-                    <div class="service-card yellow group break-inside-avoid bg-accentBg p-10 rounded-3xl cursor-default">
+                    <div class="service-card yellow group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-amber-600 group-hover:!text-amber-600 transition-colors"><i class="fa-solid fa-chart-pie"></i></div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:!text-amber-900 transition-colors">Data Visualization & Dashboards</h3>
-                        <p class="text-secondary group-hover:!text-gray-800 transition-colors">Creating interactive dashboards and visual reports to present complex data in clear, meaningful formats.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-amber-900 transition-colors">Data Visualization & Dashboards</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Creating interactive dashboards and visual reports to present complex data in clear, meaningful formats.</p>
                     </div>
 
-                    <div class="service-card blue group break-inside-avoid bg-accentBg p-10 rounded-3xl cursor-default">
+                    <div class="service-card blue group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-blue-600 group-hover:!text-blue-600 transition-colors"><i class="fa-solid fa-file-invoice"></i></div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:!text-blue-900 transition-colors">Business Intelligence Reporting</h3>
-                        <p class="text-secondary group-hover:!text-gray-800 transition-colors">Delivering performance reports and KPI tracking to help businesses monitor growth and improve strategy.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-blue-900 transition-colors">Business Intelligence Reporting</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Delivering performance reports and KPI tracking to help businesses monitor growth and improve strategy.</p>
                     </div>
 
-                    <a href="#contact" class="block break-inside-avoid bg-primary text-white p-10 rounded-3xl hover:bg-gray-800 transition group">
-                        <h3 class="text-3xl font-bold mb-2">Let’s unlock your data.</h3>
+                    <a href="#contact" class="block break-inside-avoid bg-primary text-white p-8 md:p-10 rounded-3xl hover:bg-gray-800 transition group">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2">Let’s unlock your data.</h3>
                         <p class="text-brand font-bold mt-2 group-hover:!text-white transition flex items-center gap-1">Click to get in touch &rarr;</p>
                     </a>
                 </div>
             </section>
 
             <section id="projects" class="mb-32">
-                <h2 class="text-4xl font-bold mb-10">My Projects 💻</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-10">My Projects 💻</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
-
-                    <a href="https://github.com/mohamedabedier/retail-analysis-dashboard" class="service-card blue project-card group bg-accentBg p-4 md:p-5 rounded-3xl flex flex-col justify-between">
-                        <div>
-                            <img src="images/projects/dashboard-3.jpg" alt="Gaming & Mental Health Analysis" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
-                            <div class="px-2">
-                                <div class="flex justify-between items-center mb-2">
-                                    <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">Data Analysis</p>
-                                    <p class="text-xs text-gray-400 font-medium group-hover:!text-gray-700 transition">Jan 22, 2026</p>
-                                </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-1 group-hover:!text-blue-900 transition">Retail Analysis DashBoard</h3>
-                            </div>
-                        </div>
-                        <div class="px-2 mt-auto pt-8">
-                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
-                        </div>
-                    </a>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8" id="projects-grid">
                     
-                    <a href="https://github.com/mohamedabedier/sales-performance-analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-4 md:p-5 rounded-3xl flex flex-col justify-between">
+                    <a href="https://github.com/mohamedabedier/sales-performance-analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
                         <div>
                             <img src="images/projects/dashboard-1.png" alt="Sales Transactions Dashboard" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
                             <div class="px-2">
@@ -420,12 +408,17 @@
                                 <h3 class="text-xl font-bold text-gray-800 mb-1 group-hover:!text-blue-900 transition">Sales Performance Analysis</h3>
                             </div>
                         </div>
-                        <div class="px-2 mt-auto pt-8">
+                        <div class="px-2 mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">SQL</span>
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Power BI</span>
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Excel</span>
+                            </div>
                             <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
                         </div>
                     </a>
 
-                    <a href="https://github.com/mohamedabedier/sales-inventory-analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-4 md:p-5 rounded-3xl flex flex-col justify-between">
+                    <a href="https://github.com/mohamedabedier/sales-inventory-analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
                         <div>
                             <img src="images/projects/dashboard-2.png" alt="Sales & Inventory Management" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
                             <div class="px-2">
@@ -436,7 +429,33 @@
                                 <h3 class="text-xl font-bold text-gray-800 mb-1 group-hover:!text-blue-900 transition">Sales & Inventory Management</h3>
                             </div>
                         </div>
-                        <div class="px-2 mt-auto pt-8">
+                        <div class="px-2 mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Python</span>
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Pandas</span>
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Tableau</span>
+                            </div>
+                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <img src="images/projects/dashboard-3.jpg" alt="Retail Analysis DashBoard" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
+                            <div class="px-2">
+                                <div class="flex justify-between items-center mb-2">
+                                    <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">Data Analysis</p>
+                                    <p class="text-xs text-gray-400 font-medium group-hover:!text-gray-700 transition">Jan 22, 2026</p>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-1 group-hover:!text-blue-900 transition">Retail Analysis DashBoard</h3>
+                            </div>
+                        </div>
+                        <div class="px-2 mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Python</span>
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">SQL</span>
+                                <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Data Modeling</span>
+                            </div>
                             <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
                         </div>
                     </a>
@@ -444,7 +463,7 @@
             </section>
 
             <section id="skills" class="mb-32 text-center bg-accentBg py-16 rounded-3xl">
-                <h2 class="text-4xl font-bold mb-12">My Superpowers 🦸‍♂️</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">My Superpowers 🦸‍♂️</h2>
                 
                 <div class="flex flex-wrap justify-center gap-y-12 md:gap-y-16 max-w-4xl mx-auto px-4">
                     
@@ -485,8 +504,8 @@
 
         <div class="pl-4">
             <section id="blogs" class="mb-32 py-16 overflow-hidden relative">
-                <div class="max-w-6xl mx-auto px-6 flex justify-between items-end mb-8">
-                    <h2 class="text-4xl font-bold">Read My <br>Popular Posts ✍️</h2>
+                <div class="max-w-6xl mx-auto px-6 md:px-6 flex justify-between items-end mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold">Read My <br>Popular Posts ✍️</h2>
                     
                     <div class="hidden md:flex gap-3">
                         <button id="btn-prev" class="w-10 h-10 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fa-solid fa-arrow-left"></i></button>
@@ -514,15 +533,15 @@
                             </div>
                         </a>
 
-                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="service-card orange w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
                             <div>
                                 <img src="images/blog/blog-2.png" class="rounded-2xl w-full h-[180px] object-cover mb-4 group-hover:opacity-90 transition" draggable="false">
                                 <div class="px-2">
                                     <div class="flex justify-between items-center mb-2">
-                                        <p class="text-xs text-orange-600 font-bold uppercase tracking-wider">Deep Learning</p>
+                                        <p class="text-xs text-purple-600 font-bold uppercase tracking-wider">Deep Learning</p>
                                         <p class="text-xs text-gray-400 font-medium group-hover:!text-gray-700 transition">Dec 17, 2025</p>
                                     </div>
-                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-1 group-hover:!text-orange-900 transition">How LLMs and Neural Networks Actually Work</h3>
+                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-1 group-hover:!text-purple-900 transition">How LLMs and Neural Networks Actually Work</h3>
                                     <p class="text-sm text-secondary mb-4 group-hover:!text-gray-800 transition">4 min read</p>
                                 </div>
                             </div>
@@ -531,15 +550,15 @@
                             </div>
                         </a>
 
-                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="service-card blue w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
                             <div>
                                 <img src="images/blog/blog-3.png" class="rounded-2xl w-full h-[180px] object-cover mb-4 group-hover:opacity-90 transition" draggable="false">
                                 <div class="px-2">
                                     <div class="flex justify-between items-center mb-2">
-                                        <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">Tech Insights</p>
+                                        <p class="text-xs text-purple-600 font-bold uppercase tracking-wider">Tech Insights</p>
                                         <p class="text-xs text-gray-400 font-medium group-hover:!text-gray-700 transition">Jan 4, 2026</p>
                                     </div>
-                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-1 group-hover:!text-blue-900 transition">The $100M Secret Behind Training Models Like GPT-4</h3>
+                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-1 group-hover:!text-purple-900 transition">The $100M Secret Behind Training Models Like GPT-4</h3>
                                     <p class="text-sm text-secondary mb-4 group-hover:!text-gray-800 transition">4 min read</p>
                                 </div>
                             </div>
@@ -572,11 +591,11 @@
 
         <div class="max-w-6xl mx-auto px-6">
             <section id="contact" class="mb-20">
-                <div class="bg-primary text-white rounded-3xl p-10 md:p-16 text-center max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-4">Let's work together</h2>
+                <div class="bg-primary text-white rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's work together</h2>
                     <p class="text-gray-400 mb-10 max-w-lg mx-auto">Have a dataset that needs cleaning, a dashboard that needs building, or a web project in mind? Drop me a message directly!</p>
                     
-                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
                         <a href="mailto:mohamedabedier@gmail.com" class="flex items-center justify-center gap-3 w-full sm:w-auto bg-white/10 border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white hover:text-primary transition duration-300 font-bold text-lg">
                             <i class="fa-solid fa-envelope text-2xl"></i>
                             Email Me
