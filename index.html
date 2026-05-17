@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Mohamed Bedier - Data Analyst 📊</title>
+    <meta name="description" content="Mohamed Bedier - Data Analyst who helps businesses uncover hidden opportunities, optimize performance, and make faster decisions using data. Available for freelance projects and full-time roles.">
+    <meta property="og:title" content="Mohamed Bedier - Data Analyst Portfolio 📊">
+    <meta property="og:description" content="I help businesses uncover hidden opportunities, optimize performance, and make smarter decisions using data. Available for freelance projects and full-time roles.">
+    <meta property="og:image" content="https://mohamedabedier.github.io/my_portfolio/images/my-pic.png">
+    <meta property="og:url" content="https://mohamedabedier.github.io/my_portfolio/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -54,9 +63,9 @@
         }
     </script>
 </head>
-<body class="antialiased">
+<body class="antialiased relative">
 
-<header id="navbar" class="fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full px-6 py-5 bg-pageBg border-b border-[#E5E0D8] flex justify-center items-center transition-all duration-300">
+    <header id="navbar" class="fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full px-6 py-5 bg-pageBg border-b border-[#E5E0D8] flex justify-center items-center transition-all duration-300">
         <div class="max-w-6xl w-full flex justify-between items-center">
             <a href="https://mohamedabedier.github.io/my_portfolio/" class="text-xl font-bold tracking-tight">Mohamed Bedier</a>
             
@@ -69,7 +78,7 @@
                 <a href="#blogs" class="hover:text-primary transition">Blogs</a>
             </nav>
             
-            <div class="hidden md:block">
+            <div class="hidden md:flex items-center gap-3">
                 <a href="#contact" class="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-800 transition duration-300 inline-block">Contact Me</a>
             </div>
 
@@ -88,6 +97,7 @@
         <a href="#services" class="mobile-link hover:text-brand transition">Services</a>
         <a href="#projects" class="mobile-link hover:text-brand transition">Projects</a>
         <a href="#skills" class="mobile-link hover:text-brand transition">Skills</a>
+        <a href="#testimonials" class="mobile-link hover:text-brand transition">Reviews</a>
         <a href="#blogs" class="mobile-link hover:text-brand transition">Blogs</a>
         <a href="#contact" class="mobile-link bg-brand text-white px-10 py-4 rounded-xl text-xl mt-4 shadow-lg text-center w-[200px]">Contact Me</a>
     </div>
@@ -101,17 +111,14 @@
             </div>
         </div>
 
-        <!-- التعديل هنا: زودت ال padding لـ px-6 عشان يدي براح -->
         <div class="max-w-6xl mx-auto pt-8 md:pt-12 px-6 md:px-12">
             
             <section id="home" class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 mb-24 md:mb-32 relative z-10">
                 <div class="flex-1 text-center md:text-left flex flex-col items-center md:items-start w-full">
-                    <h3 class="text-2xl md:text-4xl font-bold text-gray-800 mb-0">
-                        Hey friends <span class="wave-emoji animate-wave inline-block">👋</span>
-                    </h3>
-                    <h3 class="text-2xl md:text-4xl font-bold text-gray-800 mb-1">
-                        I'm Mohamed Bedier<span class="text-brand">,</span>
-                    </h3>
+                    <p class="text-sm font-bold uppercase tracking-widest text-brand mb-3">Hello, I'm</p>
+                    <h1 class="text-3xl md:text-5xl font-black text-gray-900 mb-1 leading-tight">
+                        Mohamed Bedier
+                    </h1>
                     
                     <div class="min-h-[100px] w-full flex flex-col justify-start pt-1 items-center md:items-start">
                         <div id="role-container" class="mb-1 fade-transition">
@@ -119,7 +126,7 @@
                             <span id="dynamic-role" class="scribble-underline font-bold text-brand text-xl md:text-3xl">Data Analyst</span>
                         </div>
                         <p id="dynamic-desc" class="text-base md:text-xl text-secondary leading-relaxed max-w-2xl font-light fade-transition mt-2">
-                            turning raw data into actionable insights and helping you make smarter decisions.
+                            I help businesses uncover hidden opportunities, optimize performance, and make smarter decisions using data.
                         </p>
                     </div>
                     
@@ -163,6 +170,28 @@
                 </div>
             </section>
 
+            <!-- IMPACT STATS STRIP -->
+            <section class="mb-32 relative z-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="stat-card flex flex-col justify-between gap-4">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-card flex flex-col justify-between gap-4">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Dashboards Built</span>
+                    </div>
+                    <div class="stat-card flex flex-col justify-between gap-4">
+                        <span class="stat-number" data-count="1">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-card flex flex-col justify-between gap-4">
+                        <span class="stat-number" data-count="120000000">0</span>
+                        <span class="stat-label">$ in Revenue Analyzed</span>
+                    </div>
+                </div>
+            </section>
+
             <section id="about" class="mb-32 bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-3xl relative z-10">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">So, Who Am I? 🤔</h2>
                 <div class="flex flex-col gap-10">
@@ -171,21 +200,20 @@
                             <img src="images/my-pic-2.jpeg" alt="About Me" class="rounded-3xl w-full aspect-square object-cover shadow-md">
                         </div>
                         <div class="md:w-2/3 w-full space-y-4 md:space-y-6 text-base md:text-lg text-secondary leading-relaxed">
-                            <p>Hey friends! 👋 I’m <span class="font-bold">Mohamed Bedier.</span> I don't just look at spreadsheets and numbers—I find the <span class="font-bold">stories</span> hidden within them to help businesses <span class="font-bold">grow and make smarter decisions.</span></p>
-                            <p>As a dedicated Data Analyst, my expertise lies in data cleaning, exploratory analysis, and creating dynamic business intelligence reports. <span class="font-bold">I use tools like Python, SQL, Excel, and Power BI </span>to build <span class="font-bold">interactive dashboards</span> that make complex metrics <span class="font-bold">easy to understand</span> at a glance.</p>
-                            <p>I take the guesswork out of decision-making by turning raw data into a clear strategic advantage. If you want to <span class="font-bold">transform your data</span> into your most valuable asset, <span class="font-bold">let’s work together.</span></p>
+                           <p>I’m Mohamed Bedier. I like to describe myself as someone <span class="font-bold">who makes data speak,</span> guiding you on exactly what steps to take next. Simply put, I help businesses <span class="font-bold">make smarter decisions</span> with data.</p>
+                            <p>I specialize in data cleaning, exploratory analysis, and building interactive dashboards using<span class="font-bold"> Python, SQL, Excel, Power BI, and Tableau.</span></p>
+                            <p>Whether you're a <span class="font-bold">startup</span> trying to understand your metrics,<span class="font-bold"> a growing business</span> drowning in spreadsheets, or a company that needs a dedicated data analyst on your team — I remove the guesswork from your decisions and replace it with <span class="font-bold">clear, evidence-backed strategy.</span></p>
                         </div>
                     </div>
 
                     <div class="w-full mt-4">
                         <div class="flex flex-row overflow-x-auto hide-scrollbar gap-6 border-b border-[#E5E0D8] pb-2 whitespace-nowrap">
-                            <button class="tab-btn active text-gray-400 pb-2 transition" onclick="showTab('experience')">Experience</button>
-                            <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('education')">Education</button>
-                            <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('courses')">Courses</button>
-                            <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('languages')">Languages</button>
+                            <button class="tab-btn active text-gray-400 pb-2 transition" onclick="showTab('experience', this)">Experience</button>
+                            <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('education', this)">Education</button>
+                            <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('courses', this)">Courses</button>
+                            <button class="tab-btn text-gray-400 pb-2 transition" onclick="showTab('languages', this)">Languages</button>
                         </div>
 
-                        <!-- Experience -->
                         <div id="experience" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                             <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full md:row-span-2">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
@@ -234,7 +262,6 @@
                             </div>
                         </div>
 
-                        <!-- Education -->
                         <div id="education" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left hidden">
                             <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
@@ -251,76 +278,116 @@
                             </div>
                         </div>
 
-                        <!-- Courses -->
-                        <div id="courses" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left hidden">
-                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
-                                <div class="w-12 h-12 flex-shrink-0 mt-1">
-                                    <img src="images/logos/mahara-tech.jpg" alt="mahara tech Logo" class="w-full h-full object-contain rounded-lg">
+                        <div id="courses" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-left hidden">
+                            
+                            <div class="bg-accentBg p-5 rounded-2xl flex flex-col w-full h-full">
+                                <div class="flex flex-col gap-3 mb-4">
+                                    <div class="flex justify-between items-start w-full">
+                                        <div class="w-12 h-12 flex-shrink-0 mt-1">
+                                            <img src="images/logos/data-camp.avif" alt="DataCamp Logo" class="w-full h-full object-contain rounded-lg">
+                                        </div>
+                                        <span class="px-2.5 py-1.5 bg-blue-100/80 text-blue-700 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-blue-200 shadow-sm whitespace-nowrap">⏳ In Progress</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-lg leading-tight">DataCamp</h3>
+                                        <p class="text-sm font-semibold text-brand mt-0.5">Data Analysis with SQL</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="font-bold text-primary text-xl">Mahara Tech</h3>
-                                    <p class="text-sm font-semibold text-brand mb-2">Database Fundamentals</p>
-                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1">
-                                        <li>Learned core relational database concepts and architecture.</li>
-                                        <li>Mastered data modeling, normalization, and database design.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
-                                <div class="w-12 h-12 flex-shrink-0 mt-1">
-                                    <img src="images/logos/udemy.png" alt="Udemy Logo" class="w-full h-full object-contain rounded-lg">
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-primary text-xl">Udemy</h3>
-                                    <p class="text-sm font-semibold text-brand mb-2">Full Stack Development Bootcamp</p>
-                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1">
-                                        <li>Learned front-end and back-end web development technologies.</li>
-                                        <li>Built dynamic, responsive, and secure web applications.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
-                                <div class="w-12 h-12 flex-shrink-0 mt-1">
-                                    <img src="images/logos/data-camp.avif" alt="DataCamp Logo" class="w-full h-full object-contain rounded-lg">
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-primary text-xl">DataCamp</h3>
-                                    <p class="text-sm font-semibold text-brand mb-2">Data Analysis with SQL</p>
-                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1">
+                                <div class="mt-auto pt-4 border-t border-[#E5E0D8]">
+                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1.5">
                                         <li>Mastered complex SQL queries and database management.</li>
                                         <li>Analyzed real-world datasets to extract insights.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
-                                <div class="w-12 h-12 flex-shrink-0 mt-1">
-                                    <img src="images/logos/deeplearning.jpg" alt="Deep Learning Logo" class="w-full h-full object-contain rounded-lg">
+                            
+                            <div class="bg-accentBg p-5 rounded-2xl flex flex-col w-full h-full">
+                                <div class="flex flex-col gap-3 mb-4">
+                                    <div class="flex justify-between items-start w-full">
+                                        <div class="w-12 h-12 flex-shrink-0 mt-1">
+                                            <img src="images/logos/deeplearning.jpg" alt="Deep Learning Logo" class="w-full h-full object-contain rounded-lg">
+                                        </div>
+                                        <span class="px-2.5 py-1.5 bg-blue-100/80 text-blue-700 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-blue-200 shadow-sm whitespace-nowrap">⏳ In Progress</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-lg leading-tight">DeepLearning.AI</h3>
+                                        <p class="text-sm font-semibold text-brand mt-0.5">Prompt Engineering</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="font-bold text-primary text-xl">DeepLearning.AI</h3>
-                                    <p class="text-sm font-semibold text-brand mb-2">Prompt Engineering</p>
-                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1">
-                                        <li>Mastered writing effective prompts for Large Language Models (LLMs).</li>
+                                <div class="mt-auto pt-4 border-t border-[#E5E0D8]">
+                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1.5">
+                                        <li>Mastered writing effective prompts for Large Language Models.</li>
                                         <li>Learned how to leverage AI tools to automate complex tasks.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-accentBg p-6 rounded-2xl flex flex-col md:flex-row gap-4 items-start w-full">
-                                <div class="w-12 h-12 flex-shrink-0 mt-1">
-                                    <img src="images/logos/yanfaaa.png" alt="Yanfaa Logo" class="w-full h-full object-contain rounded-lg">
+
+                            <div class="bg-accentBg p-5 rounded-2xl flex flex-col w-full h-full">
+                                <div class="flex flex-col gap-3 mb-4">
+                                    <div class="flex justify-between items-start w-full">
+                                        <div class="w-12 h-12 flex-shrink-0 mt-1">
+                                            <img src="images/logos/mahara-tech.jpg" alt="mahara tech Logo" class="w-full h-full object-contain rounded-lg">
+                                        </div>
+                                        <button onclick="openModal('cert-2')" class="px-2.5 py-1.5 bg-green-100/80 text-green-700 hover:bg-green-200 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-green-200 transition flex items-center gap-1 shadow-sm whitespace-nowrap focus:outline-none">📜 Certificate</button>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-lg leading-tight">Mahara Tech</h3>
+                                        <p class="text-sm font-semibold text-brand mt-0.5">Database Fundamentals</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="font-bold text-primary text-xl">Yanfaa</h3>
-                                    <p class="text-sm font-semibold text-brand mb-2">Advanced Excel</p>
-                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1">
+                                <div class="mt-auto pt-4 border-t border-[#E5E0D8]">
+                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1.5">
+                                        <li>Learned core relational database concepts and architecture.</li>
+                                        <li>Mastered data modeling, normalization, and database design.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            
+                            <div class="bg-accentBg p-5 rounded-2xl flex flex-col w-full h-full">
+                                <div class="flex flex-col gap-3 mb-4">
+                                    <div class="flex justify-between items-start w-full">
+                                        <div class="w-12 h-12 flex-shrink-0 mt-1">
+                                            <img src="images/logos/yanfaaa.png" alt="Yanfaa Logo" class="w-full h-full object-contain rounded-lg">
+                                        </div>
+                                        <button onclick="openModal('cert-1')" class="px-2.5 py-1.5 bg-green-100/80 text-green-700 hover:bg-green-200 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-green-200 transition flex items-center gap-1 shadow-sm whitespace-nowrap focus:outline-none">📜 Certificate</button>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-lg leading-tight">Yanfaa</h3>
+                                        <p class="text-sm font-semibold text-brand mt-0.5">Advanced Excel</p>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-4 border-t border-[#E5E0D8]">
+                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1.5">
                                         <li>Mastered complex formulas, Pivot Tables, and Power Query.</li>
                                         <li>Created dynamic business dashboards and automated data cleaning.</li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="bg-accentBg p-5 rounded-2xl flex flex-col w-full h-full">
+                                <div class="flex flex-col gap-3 mb-4">
+                                    <div class="flex justify-between items-start w-full">
+                                        <div class="w-12 h-12 flex-shrink-0 mt-1">
+                                            <img src="images/logos/udemy.png" alt="Udemy Logo" class="w-full h-full object-contain rounded-lg">
+                                        </div>
+                                        <span class="px-2.5 py-1.5 bg-blue-100/80 text-blue-700 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-blue-200 shadow-sm whitespace-nowrap">⏳ In Progress</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-lg leading-tight">Udemy</h3>
+                                        <p class="text-sm font-semibold text-brand mt-0.5">Full Stack Dev Bootcamp</p>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-4 border-t border-[#E5E0D8]">
+                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1.5">
+                                        <li>Learned front-end and back-end web development technologies.</li>
+                                        <li>Built dynamic, responsive, and secure web applications.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <!-- Languages (التعديل هنا: رجعناها جنب بعض) -->
                         <div id="languages" class="tab-content py-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-left hidden">
                             <div class="bg-accentBg p-6 rounded-2xl flex gap-4 items-start w-full">
                                 <div class="w-12 h-12 flex-shrink-0 mt-1">
@@ -356,7 +423,6 @@
 
             <section id="services" class="mb-32">
                 <div class="columns-1 md:columns-2 gap-6 space-y-6">
-                    
                     <div class="break-inside-avoid p-8 pl-0">
                         <h2 class="text-4xl md:text-5xl font-bold leading-tight">How can <br> I help <span class="relative z-10">You?<svg class="absolute w-[120%] h-full -left-2 top-2 -z-10" viewBox="0 0 100 40"><path d="M5,25 Q50,40 95,20" stroke="#5DCDF1" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span></h2>
                     </div>
@@ -364,25 +430,25 @@
                     <div class="service-card orange group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-orange-600 group-hover:!text-orange-600 transition-colors"><i class="fa-solid fa-broom"></i></div>
                         <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-orange-900 transition-colors">Data Cleaning & Preparation</h3>
-                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Cleaning, transforming, and organizing raw data to ensure accuracy, consistency, and reliable analysis results.</p>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Transforming messy, inconsistent datasets into structured, analysis-ready business assets.</p>
                     </div>
 
                     <div class="service-card purple group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-purple-600 group-hover:!text-purple-600 transition-colors"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-purple-900 transition-colors">Data Analysis & Insights</h3>
-                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Analyzing datasets to identify trends, patterns, and actionable insights that support smarter business decisions.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-purple-900 transition-colors">Exploratory Data Analysis</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Digging deep into your data to surface the patterns, trends, and anomalies that directly impact your bottom line.</p>
                     </div>
 
                     <div class="service-card yellow group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-amber-600 group-hover:!text-amber-600 transition-colors"><i class="fa-solid fa-chart-pie"></i></div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-amber-900 transition-colors">Data Visualization & Dashboards</h3>
-                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Creating interactive dashboards and visual reports to present complex data in clear, meaningful formats.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-amber-900 transition-colors">Decision-Making Dashboards</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Interactive dashboards designed to track KPIs, identify trends, and support faster business decisions.</p>
                     </div>
 
                     <div class="service-card blue group break-inside-avoid bg-accentBg p-8 md:p-10 rounded-3xl cursor-default">
                         <div class="icon-wrap text-4xl mb-6 text-blue-600 group-hover:!text-blue-600 transition-colors"><i class="fa-solid fa-file-invoice"></i></div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-blue-900 transition-colors">Business Intelligence Reporting</h3>
-                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Delivering performance reports and KPI tracking to help businesses monitor growth and improve strategy.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-800 group-hover:!text-blue-900 transition-colors">Automated BI Reporting</h3>
+                        <p class="text-sm md:text-base text-secondary group-hover:!text-gray-800 transition-colors">Replacing manual weekly reports with automated performance systems so your team focuses on strategy, not copy-pasting data.</p>
                     </div>
 
                     <a href="#contact" class="block break-inside-avoid bg-primary text-white p-8 md:p-10 rounded-3xl hover:bg-gray-800 transition group">
@@ -397,9 +463,9 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8" id="projects-grid">
 
-                    <a href="https://github.com/mohamedabedier/Gaming-Mental-Health-Analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                    <div onclick="openModal('modal-1')" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                         <div>
-                            <img src="images/projects/dashboard-4.png" alt="gamming & mental health" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
+                            <img src="images/projects/dashboard-4.png" alt="gaming & mental health" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
                             <div class="px-2">
                                 <div class="flex justify-between items-center mb-2">
                                     <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">Data Analysis</p>
@@ -414,11 +480,11 @@
                                 <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Statistical Analysis</span>
                                 <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Data Modeling</span>
                             </div>
-                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
+                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Case Study &rarr;</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="https://github.com/mohamedabedier/retail-analysis-dashboard" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                    <div onclick="openModal('modal-2')" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                         <div>
                             <img src="images/projects/dashboard-3.jpg" alt="Retail Analysis DashBoard" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
                             <div class="px-2">
@@ -434,11 +500,11 @@
                                 <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Excel</span>
                                 <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Data Modeling</span>
                             </div>
-                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
+                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Case Study &rarr;</p>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="https://github.com/mohamedabedier/sales-performance-analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                    <div onclick="openModal('modal-3')" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                         <div>
                             <img src="images/projects/dashboard-1.png" alt="Sales Transactions Dashboard" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
                             <div class="px-2">
@@ -453,11 +519,11 @@
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Excel</span>
                             </div>
-                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
+                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Case Study &rarr;</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="https://github.com/mohamedabedier/sales-inventory-analysis" target="_blank" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                    <div onclick="openModal('modal-4')" class="service-card blue project-card group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                         <div>
                             <img src="images/projects/dashboard-2.png" alt="Sales & Inventory Management" class="rounded-2xl w-full h-[250px] object-contain bg-white/40 mb-4 group-hover:opacity-90 transition">
                             <div class="px-2">
@@ -472,9 +538,9 @@
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="px-2.5 py-1 bg-white/60 text-gray-700 text-xs font-bold rounded-lg border border-gray-200">Excel</span>
                             </div>
-                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">GitHub &rarr;</p>
+                            <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Case Study &rarr;</p>
                         </div>
-                    </a>
+                    </div>
                     
                 </div>
             </section>
@@ -483,32 +549,26 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-12">My Superpowers 🦸‍♂️</h2>
                 
                 <div class="flex flex-wrap justify-center gap-y-12 md:gap-y-16 max-w-4xl mx-auto px-4">
-                    
                     <div class="flex flex-col items-center gap-3 w-1/2 md:w-1/4">
                         <img src="https://img.icons8.com/?size=96&id=JChkA69vF7Lo&format=png" class="w-20 h-20 md:w-24 md:h-24 hover:scale-110 transition duration-300">
                         <span class="text-base md:text-lg font-bold text-primary">Excel</span>
                     </div>
-                    
                     <div class="flex flex-col items-center gap-3 w-1/2 md:w-1/4">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-20 h-20 md:w-24 md:h-24 hover:scale-110 transition duration-300">
                         <span class="text-base md:text-lg font-bold text-primary">SQL</span>
                     </div>
-
                     <div class="flex flex-col items-center gap-3 w-1/2 md:w-1/4">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-20 h-20 md:w-24 md:h-24 hover:scale-110 transition duration-300">
                         <span class="text-base md:text-lg font-bold text-primary">Python</span>
                     </div>
-
                     <div class="flex flex-col items-center gap-3 w-1/2 md:w-1/4">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-20 h-20 md:w-24 md:h-24 hover:scale-110 transition duration-300">
                         <span class="text-base md:text-lg font-bold text-primary">Pandas</span>
                     </div>
-
                     <div class="flex flex-col items-center gap-3 w-1/2 md:w-1/4">
                         <img src="https://img.icons8.com/?size=96&id=Ny0t2MYrJ70p&format=png" class="w-20 h-20 md:w-24 md:h-24 hover:scale-110 transition duration-300">
                         <span class="text-base md:text-lg font-bold text-primary">Power BI</span>
                     </div>
-
                     <div class="flex flex-col items-center gap-3 w-1/2 md:w-1/4">
                         <img src="https://img.icons8.com/?size=96&id=9Kvi1p1F0tUo&format=png" class="w-20 h-20 md:w-24 md:h-24 hover:scale-110 transition duration-300">
                         <span class="text-base md:text-lg font-bold text-primary">Tableau</span>
@@ -518,6 +578,225 @@
 
         </div> 
         
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- BLOG MODALS -->
+            <div id="blog-modal-1" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+                <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs text-purple-600 font-bold uppercase tracking-wider">Artificial Intelligence</span>
+                        <button onclick="closeModal('blog-modal-1')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">Traditional vs. Generative AI: What You Need to Know</h3>
+                    <p class="text-xs text-gray-400 mb-6">Dec 14, 2025 · 3 min read</p>
+                    <div class="text-secondary text-sm leading-relaxed space-y-4">
+                        <p>Most people think AI started with ChatGPT. But we've been using AI since the 90s — the difference is that older AI was narrowly focused, while today's AI can understand, create, and converse.</p>
+                        <p><strong class="text-primary">Traditional AI</strong> relies on pre-defined patterns and data. It's exceptional at analysis and execution, but has zero creativity. Think Google Search, YouTube recommendations, or spam filters — all pattern matchers.</p>
+                        <p><strong class="text-primary">Generative AI</strong> doesn't just recognize patterns — it creates. Given what it learned from billions of text examples, it generates entirely new content: essays, code, images, strategies. Tools like ChatGPT, Gemini, and GitHub Copilot all fall here.</p>
+                        <p>The real question isn't which is better — it's knowing which one you're using and for what. Traditional AI excels at classification and prediction. Generative AI excels at creation and explanation.</p>
+                        <p class="italic text-gray-400">💬 What AI tool do you use daily and couldn't live without?</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-generativeai-techeducation-activity-7406245887787839488-rE7B" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block text-sm"><i class="fa-brands fa-linkedin mr-2"></i>Read Full Post on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog-modal-2" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+                <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs text-purple-600 font-bold uppercase tracking-wider">Deep Learning</span>
+                        <button onclick="closeModal('blog-modal-2')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">How LLMs and Neural Networks Actually Work</h3>
+                    <p class="text-xs text-gray-400 mb-6">Dec 17, 2025 · 4 min read</p>
+                    <div class="text-secondary text-sm leading-relaxed space-y-4">
+                        <p>Here's what no one tells you: AI doesn't "think." It plays a game. Specifically, it plays a <strong class="text-primary">next-word prediction game</strong> at massive scale.</p>
+                        <p>When you write "I'm going to ____", an LLM assigns probabilities to every possible next word based on billions of training examples — and picks the highest-probability fit for the context. That's the entire trick. It's sequential prediction, done extraordinarily well.</p>
+                        <p>Under the hood, a <strong class="text-primary">Neural Network</strong> does the heavy lifting. Like the human brain has neurons, AI has nodes — organized in three layers: Input (raw data goes in), Hidden layers (patterns are extracted), and Output (the result comes out). The more hidden layers, the deeper the learning — which is where "Deep Learning" gets its name.</p>
+                        <p>Real-world examples: Image Recognition (Google Lens, Face ID), Self-Driving Cars (analyzing camera + radar feeds in real time), and AI match analysis in sports (tracking passes, predicting outcomes).</p>
+                        <p class="italic text-gray-400">🤖 The magic isn't mysterious — it's statistics at a mind-bending scale.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block text-sm"><i class="fa-brands fa-linkedin mr-2"></i>Read Full Post on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog-modal-3" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+                <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs text-purple-600 font-bold uppercase tracking-wider">Tech Insights</span>
+                        <button onclick="closeModal('blog-modal-3')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">The $100M Secret Behind Training Models Like GPT-4</h3>
+                    <p class="text-xs text-gray-400 mb-6">Jan 4, 2026 · 4 min read</p>
+                    <div class="text-secondary text-sm leading-relaxed space-y-4">
+                        <p>Training GPT-4 on your personal laptop would take thousands of years. That's not an exaggeration — it's why companies spend $100M+ to do it in 3 months.</p>
+                        <p><strong class="text-primary">The staggering numbers:</strong> 20,000 NVIDIA A100 GPUs (each priced like a new car), running for 3 straight months, consuming enough electricity to power a football stadium for 9 years.</p>
+                        <p>The training process has 3 phases: <strong class="text-primary">Pre-training</strong> (the model reads the entire internet and learns to predict the next word), <strong class="text-primary">Fine-tuning</strong> (it learns to be helpful and polite through Q&A scenarios), and <strong class="text-primary">RLHF</strong> (humans rank its answers and teach it which responses feel most natural — that's what makes ChatGPT feel like a conversation).</p>
+                        <p>But even after all this, the model still hallucinates facts, carries bias from training data, has a knowledge cutoff, and has no real moral compass — it's pure math.</p>
+                        <p class="italic text-gray-400">🚀 Extraordinary power. Still needs a human in the loop.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <a href="https://www.linkedin.com/in/mohamedabedier" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block text-sm"><i class="fa-brands fa-linkedin mr-2"></i>Read Full Post on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog-modal-4" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+                <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs text-amber-600 font-bold uppercase tracking-wider">Career Journey</span>
+                        <button onclick="closeModal('blog-modal-4')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">My Crazy Journey to Joining the DEPI Data Analytics Program</h3>
+                    <p class="text-xs text-gray-400 mb-6">Dec 5, 2025 · 5 min read</p>
+                    <div class="text-secondary text-sm leading-relaxed space-y-4">
+                        <p>I applied to the Digital Egypt Pioneers Initiative (DEPI) knowing I wasn't technically qualified. I'd only been studying for two weeks — no grades, no transcripts, nothing to submit. I applied anyway.</p>
+                        <p>Somehow, I got accepted in the first round. I passed the English test. Then came the Technical Exam — I stared at it, it stared back at me, and neither of us understood the other. I was convinced I'd been rejected.</p>
+                        <p>Days of refreshing the portal. Then: <strong class="text-primary">Waiting List</strong>. Then, out of nowhere — <strong class="text-primary">Accepted</strong>. I went to register and the website crashed. Errors everywhere. The registration window was closing in hours. Forty-six minutes on hold with customer service — and I finally got my slot manually assigned.</p>
+                        <p>Day one, I showed up full of energy. They told me my data wasn't in the system. I couldn't enter the class. More calls, more waiting. Eventually, I got added to the group.</p>
+                        <p>I'm now officially enrolled in the <strong class="text-primary">Data Analyst Specialist track — by Google</strong>, under Egypt's Ministry of Communications. And every obstacle along the way is now part of the story.</p>
+                        <p class="italic text-gray-400">وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <a href="https://www.linkedin.com/in/mohamedabedier" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block text-sm"><i class="fa-brands fa-linkedin mr-2"></i>Read Full Post on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TESTIMONIALS -->
+            <section id="testimonials" class="mb-32">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">What They Say <span class="text-brand">About Me</span> 💬</h2>
+                <p class="text-secondary mb-10 max-w-xl">Real words from colleagues and people I've built things with.</p>
+
+                <!-- Image proof strip (freelancing screenshots) -->
+                <div class="bg-accentBg border border-[#E5E0D8] rounded-3xl p-6 mb-8 flex flex-col gap-3">
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400">📸 Proof from freelancing platforms</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <img src="images/testimonials/proof-1.png" class="rounded-xl" alt="">
+                        <img src="images/testimonials/proof-1.png" class="rounded-xl" alt="">
+                        <img src="images/testimonials/proof-1.png" class="rounded-xl" alt="">
+                        <img src="images/testimonials/proof-1.png" class="rounded-xl" alt="">
+                    </div>
+                </div>
+
+                <!-- Text testimonials from colleagues -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-accentBg p-6 rounded-3xl flex flex-col gap-4 border border-[#E5E0D8]">
+                        <div class="flex gap-1 text-brand text-sm">★★★★★</div>
+                        <p class="text-secondary text-sm leading-relaxed italic">"رائع ومحترف وتواصل فعال"</p>
+                        <div class="flex items-center gap-3 mt-auto pt-4 border-t border-[#E5E0D8]">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm shrink-0">S</div>
+                            <div>
+                                <p class="font-bold text-primary text-sm">Sara</p>
+                                <p class="text-xs text-secondary">Mostql Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-accentBg p-6 rounded-3xl flex flex-col gap-4 border border-[#E5E0D8]">
+                        <div class="flex gap-1 text-brand text-sm">★★★★★</div>
+                        <p class="text-secondary text-sm leading-relaxed italic">"رائع ومحترف وتواصل فعال"</p>
+                        <div class="flex items-center gap-3 mt-auto pt-4 border-t border-[#E5E0D8]">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm shrink-0"><i class="fa-solid fa-briefcase"></i></div>
+                            <div>
+                                <p class="font-bold text-primary text-sm">Sara</p>
+                                <p class="text-xs text-secondary">Mostql Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-accentBg p-6 rounded-3xl flex flex-col gap-4 border border-[#E5E0D8]">
+                        <div class="flex gap-1 text-brand text-sm">★★★★★</div>
+                        <p class="text-secondary text-sm leading-relaxed italic">"رائع ومحترف وتواصل فعال"</p>
+                        <div class="flex items-center gap-3 mt-auto pt-4 border-t border-[#E5E0D8]">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm shrink-0">S</div>
+                            <div>
+                                <p class="font-bold text-primary text-sm">Sara</p>
+                                <p class="text-xs text-secondary">Mostql Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT — merged with Who I Work With -->
+            <section id="contact" class="mb-20">
+
+
+                <div class="bg-primary text-white rounded-3xl p-8 md:p-14 max-w-5xl mx-auto">
+                    <div class="text-center mb-10">
+                        <p class="text-brand font-bold text-xs uppercase tracking-widest mb-2">Ready to Work Together?</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-3">Let's Make It Happen</h2>
+                        <p class="text-gray-400 max-w-lg mx-auto text-sm">Pick the situation that sounds most like yours — your WhatsApp message will be pre-filled and ready to send.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+
+                        <a href="https://wa.me/201030637989?text=Hi%20Mohamed%2C%0AI%20need%20a%20dashboard%20built%20for%20my%20business.%0ACould%20we%20discuss%20the%20details%3F" target="_blank" class="contact-option group flex items-start gap-4 bg-white/10 hover:bg-white/20 border border-white/15 rounded-2xl p-5 transition duration-300">
+                            <span class="text-2xl shrink-0 mt-0.5">📊</span>
+                            <div>
+                                <p class="font-bold text-white group-hover:text-brand transition text-sm mb-1">I need a dashboard built</p>
+                                <p class="text-gray-400 text-xs leading-relaxed">You have data, you need a clear visual system to track it. Let's build it.</p>
+                            </div>
+                            <i class="fa-brands fa-whatsapp text-[#25D366] text-xl ml-auto shrink-0 mt-0.5"></i>
+                        </a>
+
+                        <a href="https://wa.me/201030637989?text=Hi%20Mohamed%2C%0AI%20run%20a%20business%20and%20I%20feel%20like%20we%27re%20making%20decisions%20without%20really%20understanding%20our%20data.%0AI%27d%20like%20to%20know%20how%20data%20analysis%20could%20help%20us%20identify%20problems%2C%20track%20KPIs%2C%20and%20improve%20performance." target="_blank" class="contact-option group flex items-start gap-4 bg-white/10 hover:bg-white/20 border border-white/15 rounded-2xl p-5 transition duration-300">
+                            <span class="text-2xl shrink-0 mt-0.5">💸</span>
+                            <div>
+                                <p class="font-bold text-white group-hover:text-brand transition text-sm mb-1">I think my business is losing money</p>
+                                <p class="text-gray-400 text-xs leading-relaxed">Something feels off in the numbers. Let's find out exactly what and where.</p>
+                            </div>
+                            <i class="fa-brands fa-whatsapp text-[#25D366] text-xl ml-auto shrink-0 mt-0.5"></i>
+                        </a>
+
+                        <a href="https://wa.me/201030637989?text=Hi%20Mohamed%2C%0AI%20am%20%5Byour%20name%20and%20role%5D%20and%20I%27m%20hiring%20a%20Data%20Analyst%20specialized%20in%20%5Benter%20specialization%5D%20and%20skilled%20in%20%5Benter%20skills%20e.g.%20SQL%2C%20Power%20BI%5D.%0ACould%20you%20send%20me%20your%20CV%20please%3F" target="_blank" class="contact-option group flex items-start gap-4 bg-white/10 hover:bg-white/20 border border-white/15 rounded-2xl p-5 transition duration-300">
+                            <span class="text-2xl shrink-0 mt-0.5">👔</span>
+                            <div>
+                                <p class="font-bold text-white group-hover:text-brand transition text-sm mb-1">I'm hiring a Data Analyst</p>
+                                <p class="text-gray-400 text-xs leading-relaxed">Looking for the right person for your team? Let's see if I'm the right fit.</p>
+                            </div>
+                            <i class="fa-brands fa-whatsapp text-[#25D366] text-xl ml-auto shrink-0 mt-0.5"></i>
+                        </a>
+
+                        <a href="mailto:mohamedabedier@gmail.com" class="contact-option group flex items-start gap-4 bg-white/10 hover:bg-white/20 border border-white/15 rounded-2xl p-5 transition duration-300">
+                            <span class="text-2xl shrink-0 mt-0.5">✉️</span>
+                            <div>
+                                <p class="font-bold text-white group-hover:text-brand transition text-sm mb-1">Something else entirely</p>
+                                <p class="text-gray-400 text-xs leading-relaxed">Got a different project or question? Drop me an email and we'll figure it out.</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-brand text-sm ml-auto shrink-0 mt-1"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Strong CTA strip -->
+                    <div class="bg-brand/10 border border-brand/30 rounded-2xl p-6 text-center mb-8">
+                        <p class="text-white font-bold text-base mb-1">⚡ Fast response guaranteed</p>
+                        <p class="text-gray-400 text-xs">I typically reply within 2–4 hours on WhatsApp. Weekdays and weekends.</p>
+                    </div>
+
+                    <div class="text-center border-t border-white/10 pt-8">
+                        <p class="text-gray-400 text-sm mb-4">Prefer a direct line?</p>
+                        <div class="flex justify-center gap-4 flex-wrap">
+                            <a href="https://wa.me/201030637989" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1ebd57] transition text-sm shadow-lg shadow-green-900/30">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="mailto:mohamedabedier@gmail.com" class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-primary transition text-sm">
+                                <i class="fa-solid fa-envelope"></i> Email Me
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohamedabedier" target="_blank" class="inline-flex items-center gap-2 bg-[#0A66C2] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#0952a0] transition text-sm">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
 
         <div class="pl-4">
             <section id="blogs" class="mb-32 py-16 overflow-hidden relative">
@@ -533,7 +812,7 @@
                 <div>
                     <div id="blog-carousel" class="flex overflow-x-auto gap-6 hide-scrollbar cursor-grab py-4">
                         
-                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-generativeai-techeducation-activity-7406245887787839488-rE7B" target="_blank" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <div onclick="openModal('blog-modal-1')" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                             <div>
                                 <img src="images/blog/blog-1.png" class="rounded-2xl w-full h-[180px] object-cover mb-4 group-hover:opacity-90 transition" draggable="false">
                                 <div class="px-2">
@@ -546,11 +825,11 @@
                                 </div>
                             </div>
                             <div class="px-2 mt-auto pt-12">
-                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read on LinkedIn &rarr;</p>
+                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Preview &rarr;</p>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <div onclick="openModal('blog-modal-2')" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                             <div>
                                 <img src="images/blog/blog-2.png" class="rounded-2xl w-full h-[180px] object-cover mb-4 group-hover:opacity-90 transition" draggable="false">
                                 <div class="px-2">
@@ -563,11 +842,11 @@
                                 </div>
                             </div>
                             <div class="px-2 mt-auto pt-12">
-                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read on LinkedIn &rarr;</p>
+                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Preview &rarr;</p>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="https://www.linkedin.com/posts/mohamedabedier_artificialintelligence-neuralnetwork-deeplearning-activity-7408797965835743232-a_CH" target="_blank" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <div onclick="openModal('blog-modal-3')" class="service-card purple w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                             <div>
                                 <img src="images/blog/blog-3.png" class="rounded-2xl w-full h-[180px] object-cover mb-4 group-hover:opacity-90 transition" draggable="false">
                                 <div class="px-2">
@@ -580,11 +859,11 @@
                                 </div>
                             </div>
                             <div class="px-2 mt-auto pt-12">
-                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read on LinkedIn &rarr;</p>
+                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Preview &rarr;</p>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="https://www.linkedin.com/posts/mohamedabedier_%D9%82%D8%AF%D9%85%D8%AA-%D9%81%D9%8A-depi-%D9%88%D8%A7%D9%86%D8%A7-%D9%85%D8%B4-%D9%85%D8%A4%D9%87%D9%84-%D8%A7%D8%AA%D9%82%D8%A8%D9%84%D8%AA-%D9%85%D8%B4-%D8%B9%D8%A7%D8%B1%D9%81-activity-7401196881038516224-y1cK" target="_blank" class="service-card yellow w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between">
+                        <div onclick="openModal('blog-modal-4')" class="service-card yellow w-[85vw] sm:w-[300px] md:w-[350px] shrink-0 group bg-accentBg p-5 rounded-3xl flex flex-col justify-between cursor-pointer">
                             <div>
                                 <img src="images/blog/blog-5.png" class="rounded-2xl w-full h-[180px] object-cover mb-4 group-hover:opacity-90 transition" draggable="false">
                                 <div class="px-2">
@@ -597,37 +876,14 @@
                                 </div>
                             </div>
                             <div class="px-2 mt-auto pt-12">
-                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read on LinkedIn &rarr;</p>
+                                <p class="text-sm font-bold text-brand group-hover:!text-primary transition flex items-center gap-1">Read Preview &rarr;</p>
                             </div>
-                        </a>
+                        </div>
 
                     </div>
                 </div>
             </section>
         </div>
-
-        <div class="max-w-6xl mx-auto px-6">
-            <section id="contact" class="mb-20">
-                <div class="bg-primary text-white rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's work together</h2>
-                    <p class="text-gray-400 mb-10 max-w-lg mx-auto">Have a dataset that needs cleaning, a dashboard that needs building, or a web project in mind? Drop me a message directly!</p>
-                    
-                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
-                        <a href="mailto:mohamedabedier@gmail.com" class="flex items-center justify-center gap-3 w-full sm:w-auto bg-white/10 border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white hover:text-primary transition duration-300 font-bold text-lg">
-                            <i class="fa-solid fa-envelope text-2xl"></i>
-                            Email Me
-                        </a>
-                        
-                        <a href="https://wa.me/201030637989" target="_blank" class="flex items-center justify-center gap-3 w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-xl hover:bg-[#1ebd57] transition duration-300 font-bold text-lg shadow-lg shadow-[#25D366]/30">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            WhatsApp Me
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-    </main>
 
     <footer class="bg-pageBg border-t border-[#E5E0D8] py-12 text-center">
         <h2 class="text-2xl font-bold mb-6">Mohamed Bedier</h2>
@@ -639,6 +895,163 @@
         </div>
         <p class="text-sm text-gray-400">&copy; 2026 Mohamed Bedier. All rights reserved.</p>
     </footer>
+
+    <div id="project-modals" class="relative z-[100]">
+        
+        <div id="modal-1" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Gaming & Mental Health Analysis</h3>
+                    <button onclick="closeModal('modal-1')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="space-y-6 text-secondary">
+                    <div>
+                        <h4 class="text-lg font-bold text-primary mb-2">🎯 The Problem</h4>
+                        <p>Understanding the actual statistical correlation between gaming habits and mental health indicators (like focus and stress) across 1,000 player records — without any clean, structured data to start from.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-brand mb-2">💡 The Solution</h4>
+                        <p>Applied statistical outlier detection (Mean ± 3 Standard Deviations) to clean the dataset, then engineered features like Physical Pain Index and Addiction Risk scores. Built a Star Schema with 6 dimension tables and a 3-page interactive dashboard covering Gaming, Health, and Addiction dimensions.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-green-600 mb-2">📈 Business Impact</h4>
+                        <p>Identified safe gaming thresholds backed by statistical evidence. The dashboard directly correlates gaming hours with sleep disruption frequency and academic productivity loss — enabling wellness mentors to give data-driven lifestyle recommendations instead of guesswork.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-lg border border-blue-200">1,000 Records Analyzed</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-lg border border-green-200">6 Dimension Tables</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-lg border border-purple-200">3-Page Dashboard</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 text-xs font-bold rounded-lg border border-orange-200">Star Schema Model</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="https://github.com/mohamedabedier/Gaming-Mental-Health-Analysis" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block">View Code on GitHub <i class="fa-brands fa-github ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-2" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Retail Analysis DashBoard</h3>
+                    <button onclick="closeModal('modal-2')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="space-y-6 text-secondary">
+                    <div>
+                        <h4 class="text-lg font-bold text-primary mb-2">🎯 The Problem</h4>
+                        <p>Tracking retail metrics across multiple regions with no clear picture of which discounts were actually profitable — the business was losing money without knowing it.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-brand mb-2">💡 The Solution</h4>
+                        <p>Built a Star Schema data model with 9 dimension tables (Customers, Products, Locations, Dates, Categories, etc.) linked to a central FactOrder table, covering <strong>$2.29M in total sales</strong>. Created a multi-dimensional Power BI dashboard to track KPIs and profit margins.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-green-600 mb-2">📈 Business Impact</h4>
+                        <p>Uncovered a critical insight: discounted sales generated slightly more revenue ($1.21M) but produced a <strong>net loss of -$34,590</strong>, while full-price sales yielded a healthy <strong>$320,987 profit</strong>. This finding triggered an immediate audit of the discount strategy.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-lg border border-blue-200">$2,297,200 Revenue</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-lg border border-green-200">$286,397 Net Profit</span>
+                        <span class="px-3 py-1 bg-red-50 text-red-700 text-xs font-bold rounded-lg border border-red-200">-$34K Discount Loss Found</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-lg border border-purple-200">9 Dimension Tables</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="https://github.com/mohamedabedier/retail-analysis-dashboard" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block">View Code on GitHub <i class="fa-brands fa-github ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-3" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Sales Performance Analysis</h3>
+                    <button onclick="closeModal('modal-3')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="space-y-6 text-secondary">
+                    <div>
+                        <h4 class="text-lg font-bold text-primary mb-2">🎯 The Problem</h4>
+                        <p>No baseline tracking data to evaluate individual sales pipeline efficiency or identify the core revenue drivers across 4 geographic regions.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-brand mb-2">💡 The Solution</h4>
+                        <p>Analyzed <strong>565 commercial transactions</strong> spanning a full year, covering North, South, East, and West regions. Built an interactive Excel dashboard tracking categories down to specific product-level insights (Electronics, Furniture, Accessories).</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-green-600 mb-2">📈 Business Impact</h4>
+                        <p>Revealed that <strong>Electronics alone drives 70% of total revenue ($177K of $252K)</strong>. Identified April as the peak month (83 units, $36,700) and October–November as the slowest, enabling targeted flash sales during dead months. The North region leads with 200 units vs. the South's 101.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-lg border border-blue-200">$252,225 Total Revenue</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-lg border border-green-200">565 Transactions</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 text-xs font-bold rounded-lg border border-orange-200">70% Electronics Share</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-lg border border-purple-200">4 Regions Tracked</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="https://github.com/mohamedabedier/sales-performance-analysis" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block">View Code on GitHub <i class="fa-brands fa-github ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-4" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 transform scale-95 transition-transform duration-300">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Sales & Inventory Management</h3>
+                    <button onclick="closeModal('modal-4')" class="text-gray-400 hover:text-primary text-2xl"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="space-y-6 text-secondary">
+                    <div>
+                        <h4 class="text-lg font-bold text-primary mb-2">🎯 The Problem</h4>
+                        <p>Imbalances between inventory stock and actual sales demand across 4 categories (Electronics, Furniture, Clothing, Grocery) with no unified view of payment channels or sales channel performance.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-brand mb-2">💡 The Solution</h4>
+                        <p>Built a relational Excel dashboard on top of a Products Master + Sales Transactions model tracking <strong>$120.9M in commercial transactions over 4 years (2023–2026)</strong>. Integrated Online, Direct, and Wholesaler channels with 4 payment methods including InstaPay.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-green-600 mb-2">📈 Business Impact</h4>
+                        <p>Confirmed a <strong>17.16% overall profit margin on $120.9M revenue</strong>. Revealed Electronics generates over $70.8M (58% of total), and that Online leads sales channels at $42M. Bank Transfers and Credit Cards process a combined $62M — flagging these as critical infrastructure to protect from friction.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-lg border border-blue-200">$120.9M Revenue</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-lg border border-green-200">17.16% Profit Margin</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 text-xs font-bold rounded-lg border border-orange-200">4 Years of Data</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-lg border border-purple-200">3 Sales Channels</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="https://github.com/mohamedabedier/sales-inventory-analysis" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition inline-block">View Code on GitHub <i class="fa-brands fa-github ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cert-1" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-4 md:p-6 transform scale-95 transition-transform duration-300 cert-img-modal">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800">Yanfaa Certificate</h3>
+                    <button onclick="closeModal('cert-1')" class="text-gray-400 hover:text-primary text-2xl focus:outline-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <img src="images/certificates/yanfaa-cert.jpg" alt="Yanfaa Advanced Excel Certificate" onerror="this.src='https://via.placeholder.com/800x560?text=Certificate+Image'">
+            </div>
+        </div>
+
+        <div id="cert-2" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-4 md:p-6 transform scale-95 transition-transform duration-300 cert-img-modal">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800">Mahara Tech Certificate</h3>
+                    <button onclick="closeModal('cert-2')" class="text-gray-400 hover:text-primary text-2xl focus:outline-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <img src="images/certificates/mahara-cert.jpg" alt="Mahara Tech Database Certificate" onerror="this.src='https://via.placeholder.com/800x560?text=Certificate+Image'">
+            </div>
+        </div>
+
+
+    </div>
 
     <script src="script.js"></script>
 </body>
