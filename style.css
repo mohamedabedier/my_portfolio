@@ -1,20 +1,23 @@
-/* الخط الأساسي للموقع كله */
-body { 
-    font-family: 'Inter', sans-serif; 
-    color: #1B1624; 
-    background-color: #FAF9F6; 
-    overflow-x: hidden; 
+/* ===========================
+   BASE
+=========================== */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1B1624;
+    background-color: #FAF9F6;
+    overflow-x: hidden;
 }
 
-/* Dynamic Header Transitions */
+/* ===========================
+   NAVBAR
+=========================== */
 #navbar { transition: all 0.4s ease-in-out; }
 
-/* The fix for the centering issue */
 .nav-scrolled {
     max-width: 900px !important;
     margin-top: 15px !important;
     left: 50% !important;
-    transform: translateX(-50%) !important; 
+    transform: translateX(-50%) !important;
     border-radius: 50px !important;
     background-color: rgba(250, 249, 246, 0.85) !important;
     backdrop-filter: blur(12px) !important;
@@ -24,7 +27,9 @@ body {
     border: 1px solid #E5E0D8 !important;
 }
 
-/* Scribble Underline */
+/* ===========================
+   SCRIBBLE UNDERLINE
+=========================== */
 .scribble-underline {
     position: relative;
     display: inline-block;
@@ -42,31 +47,118 @@ body {
     z-index: -1;
 }
 
-/* Dynamic Text Transitions */
+/* ===========================
+   DYNAMIC TEXT TRANSITIONS
+=========================== */
 .fade-transition {
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Waving Hand Origin */
-.wave-emoji { 
-    transform-origin: 70% 70%; 
-    display: inline-block; 
+/* ===========================
+   WAVE EMOJI
+=========================== */
+.wave-emoji {
+    transform-origin: 70% 70%;
+    display: inline-block;
 }
 
-/* Services Hover Highlights */
+/* ===========================
+   SERVICE CARD HOVER
+=========================== */
 .service-card { transition: all 0.3s ease; }
-.service-card.orange:hover { background-color: #FD976D; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(253, 151, 109, 0.4); }
-.service-card.orange:hover p, .service-card.orange:hover h3, .service-card.orange:hover .icon-wrap { color: #1B1624; }
-.service-card.purple:hover { background-color: #C9B1FB; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(201, 177, 251, 0.4); }
-.service-card.purple:hover p, .service-card.purple:hover h3, .service-card.purple:hover .icon-wrap { color: #1B1624; }
-.service-card.yellow:hover { background-color: #FDD46B; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(253, 212, 107, 0.4); }
-.service-card.yellow:hover p, .service-card.yellow:hover h3, .service-card.yellow:hover .icon-wrap { color: #1B1624; }
-.service-card.blue:hover { background-color: #5DCDF1; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(93, 205, 241, 0.4); }
-.service-card.blue:hover p, .service-card.blue:hover h3, .service-card.blue:hover .icon-wrap { color: #1B1624; }
 
-/* Hide scrollbar for carousel */
+.service-card.orange:hover { background-color: #FD976D; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(253,151,109,0.4); }
+.service-card.orange:hover p,
+.service-card.orange:hover h3,
+.service-card.orange:hover .icon-wrap { color: #1B1624; }
+
+.service-card.purple:hover { background-color: #C9B1FB; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(201,177,251,0.4); }
+.service-card.purple:hover p,
+.service-card.purple:hover h3,
+.service-card.purple:hover .icon-wrap { color: #1B1624; }
+
+.service-card.yellow:hover { background-color: #FDD46B; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(253,212,107,0.4); }
+.service-card.yellow:hover p,
+.service-card.yellow:hover h3,
+.service-card.yellow:hover .icon-wrap { color: #1B1624; }
+
+.service-card.blue:hover { background-color: #5DCDF1; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(93,205,241,0.4); }
+.service-card.blue:hover p,
+.service-card.blue:hover h3,
+.service-card.blue:hover .icon-wrap { color: #1B1624; }
+
+/* ===========================
+   CAROUSEL SCROLLBAR HIDE
+=========================== */
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Tab active state */
-.tab-btn.active { border-bottom: 2px solid #1B1624; color: #1B1624; font-weight: 600; }
+/* ===========================
+   TAB ACTIVE STATE
+=========================== */
+.tab-btn.active {
+    border-bottom: 2px solid #1B1624;
+    color: #1B1624;
+    font-weight: 600;
+}
+
+/* ===========================
+   SCROLL-TRIGGERED ANIMATIONS
+=========================== */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delay for grid children */
+.reveal-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+.reveal-on-scroll:nth-child(3) { transition-delay: 0.2s; }
+.reveal-on-scroll:nth-child(4) { transition-delay: 0.3s; }
+
+/* ===========================
+   IMPACT STATS STRIP
+=========================== */
+.stat-card {
+    background: #FAF9F6;
+    border: 1.5px solid #E5E0D8;
+    border-radius: 20px;
+    padding: 24px 32px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+.stat-number {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #f89f1b;
+    line-height: 1;
+    display: block;
+}
+.stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #555555;
+    margin-top: 6px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ===========================
+   CERTIFICATE IMAGE MODAL
+=========================== */
+.cert-img-modal img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
