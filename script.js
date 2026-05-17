@@ -1,11 +1,10 @@
 // 1. Dynamic Text Swapper Logic
 const roles = [
-    { role: "Data Analyst", desc: "turning raw data into actionable insights and helping you make smarter decisions." },
-    { role: "Power BI Developer", desc: "designing interactive, enterprise-grade dashboards to track your key metrics." },
-    { role: "Tableau Developer", desc: "crafting beautiful, intuitive data visualizations that tell a compelling story." },
-    { role: "Data Visualization Specialist", desc: "transforming complex datasets into clear, visual business strategies." }
+    { role: "Data Analyst", desc: "I help businesses uncover hidden opportunities, optimize performance, and make smarter decisions using data." },
+    { role: "Power BI Developer", desc: "Turning messy business data into clear decisions, actionable insights, and growth opportunities." },
+    { role: "Tableau Developer", desc: "I build dashboards and data systems that help businesses increase efficiency and make faster decisions." },
+    { role: "Data Visualization Specialist", desc: "Transforming complex datasets into clear visual strategies that drive real business results." }
 ];
-
 
 let currentRoleIndex = 0;
 const roleContainer = document.getElementById('role-container');
@@ -14,20 +13,16 @@ const descElement = document.getElementById('dynamic-desc');
 
 if (roleContainer && roleElement && descElement) {
     setInterval(() => {
-        // Fade out
         roleContainer.style.opacity = 0;
         descElement.style.opacity = 0;
 
         setTimeout(() => {
-            // Update Text
             currentRoleIndex = (currentRoleIndex + 1) % roles.length;
             roleElement.innerText = roles[currentRoleIndex].role;
             descElement.innerText = roles[currentRoleIndex].desc;
-            
-            // Fade in
             roleContainer.style.opacity = 1;
             descElement.style.opacity = 1;
-        }, 500); 
+        }, 500);
     }, 4000);
 }
 
@@ -41,7 +36,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// 3. Mobile Menu Logic (With Safety Checks)
+// 3. Mobile Menu Logic
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const closeMenuBtn = document.getElementById('close-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -51,11 +46,9 @@ if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.remove('translate-x-full');
     });
-
     closeMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.add('translate-x-full');
     });
-
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.add('translate-x-full');
@@ -63,8 +56,8 @@ if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
     });
 }
 
-// 4. About Me Tabs Logic
-function showTab(tabId) {
+// 4. About Me Tabs Logic — fixed: accepts element directly, no global event reliance
+function showTab(tabId, el) {
     document.querySelectorAll('.tab-content').forEach(content => {
         content.classList.add('hidden');
     });
@@ -72,49 +65,36 @@ function showTab(tabId) {
         btn.classList.remove('active');
     });
     document.getElementById(tabId).classList.remove('hidden');
-    event.target.classList.add('active');
+    el.classList.add('active');
 }
 
-// 5. Static Draggable Blog Carousel with Arrow Buttons
+// 5. Blog Carousel with Arrow Buttons
 const carousel = document.getElementById('blog-carousel');
 const btnPrev = document.getElementById('btn-prev');
 const btnNext = document.getElementById('btn-next');
 
 if (carousel) {
     let isDown = false;
-    let isDragging = false; 
+    let isDragging = false;
     let startX;
     let scrollLeft;
 
-    // Mouse Drag Logic
     carousel.addEventListener('mousedown', (e) => {
         isDown = true;
-        isDragging = false; 
-        carousel.classList.add('active:cursor-grabbing');
+        isDragging = false;
         startX = e.pageX - carousel.offsetLeft;
         scrollLeft = carousel.scrollLeft;
     });
-
-    carousel.addEventListener('mouseleave', () => { 
-        isDown = false; 
-        carousel.classList.remove('active:cursor-grabbing');
-    });
-
-    carousel.addEventListener('mouseup', () => { 
-        isDown = false; 
-        carousel.classList.remove('active:cursor-grabbing');
-    });
-
+    carousel.addEventListener('mouseleave', () => { isDown = false; });
+    carousel.addEventListener('mouseup', () => { isDown = false; });
     carousel.addEventListener('mousemove', (e) => {
         if (!isDown) return;
-        e.preventDefault(); // Prevents ghost dragging of links/images
-        isDragging = true; 
+        e.preventDefault();
+        isDragging = true;
         const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll fast
+        const walk = (x - startX) * 2;
         carousel.scrollLeft = scrollLeft - walk;
     });
-
-    // Prevent link click if dragging
     carousel.addEventListener('click', (e) => {
         if (isDragging) {
             e.preventDefault();
@@ -122,20 +102,15 @@ if (carousel) {
         }
     });
 
-    // Arrow Buttons Logic
-    if(btnPrev && btnNext) {
+    if (btnPrev && btnNext) {
         btnPrev.addEventListener('click', () => {
-            carousel.scrollBy({ left: -370, behavior: 'smooth' }); // Scrolls left by one card width approx
+            carousel.scrollBy({ left: -370, behavior: 'smooth' });
         });
-        
         btnNext.addEventListener('click', () => {
-            carousel.scrollBy({ left: 370, behavior: 'smooth' }); // Scrolls right by one card width approx
+            carousel.scrollBy({ left: 370, behavior: 'smooth' });
         });
     }
 }
-
-
-
 
 // 6. See More Projects Logic
 const seeMoreBtn = document.getElementById('see-more-btn');
@@ -144,19 +119,96 @@ const extraProjects = document.querySelectorAll('.extra-project');
 if (seeMoreBtn && extraProjects.length > 0) {
     seeMoreBtn.addEventListener('click', () => {
         let isHidden = false;
-        
         extraProjects.forEach(proj => {
             proj.classList.toggle('hidden');
-            if (proj.classList.contains('hidden')) {
-                isHidden = true;
-            }
+            if (proj.classList.contains('hidden')) isHidden = true;
         });
-
-        // تغيير النص بتاع الزرار بناءً على الحالة
-        if (isHidden) {
-            seeMoreBtn.innerHTML = 'See More Projects &rarr;';
-        } else {
-            seeMoreBtn.innerHTML = 'See Less Projects &uarr;';
-        }
+        seeMoreBtn.innerHTML = isHidden ? 'See More Projects &rarr;' : 'See Less Projects &uarr;';
     });
 }
+
+// 7. Modal Logic — FIXED cert-2 close bug
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('hidden');
+        void modal.offsetWidth;
+        modal.classList.remove('opacity-0');
+        modal.querySelector('div').classList.remove('scale-95');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('opacity-0');
+        modal.querySelector('div').classList.add('scale-95');
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }, 300);
+    }
+}
+
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('fixed') &&
+       (event.target.id.startsWith('modal-') || event.target.id.startsWith('cert-') || event.target.id.startsWith('blog-modal-'))) {
+        closeModal(event.target.id);
+    }
+});
+
+// 8. Scroll-triggered fade-in animations (Intersection Observer)
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe all sections and cards
+document.querySelectorAll('section, .service-card, .project-card, .bg-accentBg').forEach(el => {
+    el.classList.add('reveal-on-scroll');
+    observer.observe(el);
+});
+
+// 9. Animated stat counter with smart formatting
+function formatCount(n) {
+    if (n >= 1000000) return '$' + (n / 1000000).toFixed(0) + 'M+';
+    if (n >= 1000) return n.toLocaleString();
+    return n.toString();
+}
+
+function animateCounter(el, target, duration = 1000) {
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+        start += step;
+        if (start >= target) {
+            el.textContent = formatCount(target);
+            clearInterval(timer);
+        } else {
+            el.textContent = formatCount(Math.floor(start));
+        }
+    }, 16);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.dataset.count, 10);
+            animateCounter(el, target);
+            counterObserver.unobserve(el);
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
