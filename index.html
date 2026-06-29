@@ -286,17 +286,31 @@
                                         <div class="w-12 h-12 flex-shrink-0 mt-1">
                                             <img src="images/logos/data-camp.avif" alt="DataCamp Logo" class="w-full h-full object-contain rounded-lg">
                                         </div>
-                                        <span class="px-2.5 py-1.5 bg-blue-100/80 text-blue-700 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-blue-200 shadow-sm whitespace-nowrap">⏳ In Progress</span>
+                                        <button onclick="openModal('cert-5')" class="px-2.5 py-1.5 bg-green-100/80 text-green-700 hover:bg-green-200 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-green-200 transition flex items-center gap-1 shadow-sm whitespace-nowrap focus:outline-none">
+                                            📜 View Certificates
+                                        </button>
                                     </div>
                                     <div>
                                         <h3 class="font-bold text-primary text-lg leading-tight">DataCamp</h3>
-                                        <p class="text-sm font-semibold text-brand mt-0.5">Data Analysis with SQL</p>
+                                        <p class="text-sm font-semibold text-brand mt-0.5">Data Analyst Career Tracks</p>
                                     </div>
                                 </div>
+                                
                                 <div class="mt-auto pt-4 border-t border-[#E5E0D8]">
-                                    <ul class="text-sm text-secondary list-disc ml-4 space-y-1.5">
-                                        <li>Mastered complex SQL queries and database management.</li>
-                                        <li>Analyzed real-world datasets to extract insights.</li>
+                                    <p class="text-[11px] font-bold text-secondary uppercase tracking-wider mb-3">Current Progress:</p>
+                                    <ul class="text-sm text-secondary space-y-2.5">
+                                        <li class="flex justify-between items-center">
+                                            <span class="flex items-center gap-2"><i class="fa-solid fa-database text-brand w-4 text-center"></i> SQL Track</span>
+                                            <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded border border-blue-200">In Progress 38%</span>
+                                        </li>
+                                        <li class="flex justify-between items-center">
+                                            <span class="flex items-center gap-2"><i class="fa-brands fa-python text-brand w-4 text-center"></i> Python Track</span>
+                                            <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded border border-blue-200">In Progress 11%</span>
+                                        </li>
+                                        <li class="flex justify-between items-center">
+                                            <span class="flex items-center gap-2"><i class="fa-solid fa-chart-pie text-brand w-4 text-center"></i> Tableau Track</span>
+                                            <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded border border-blue-200">In Progress 11%</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -1115,6 +1129,26 @@
                     </button>
                 </div>
                  <img src="images/certificates/Claude-101.jpg" alt="Claude 101 Certificate" onerror="this.onerror=null; this.src='https://placehold.co/800x560?text=Certificate+Error'">
+            </div>
+        </div>
+
+        <div id="cert-5" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity opacity-0 z-[100]">
+            <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-4 md:p-6 transform scale-95 transition-transform duration-300 cert-img-modal">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800">Data Camp Certificates</h3>
+                    <button onclick="closeModal('cert-5')" class="text-gray-400 hover:text-primary text-2xl focus:outline-none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                 <img src="images/certificates/Joining Data in SQL.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x560?text=Certificate+Error'">
+                 <br>
+                 <img src="images/certificates/Intermediate SQL.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x560?text=Certificate+Error'">
+                 <br>
+                 <img src="images/certificates/introduction to SQL.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x560?text=Certificate+Error'">
+                 <br>
+                 <img src="images/certificates/Introduction to Python.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x560?text=Certificate+Error'">
+                 <br>
+                 <img src="images/certificates/Introduction to Tableau.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x560?text=Certificate+Error'">
             </div>
         </div>
 
