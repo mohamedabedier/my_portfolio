@@ -102,6 +102,20 @@ body {
     font-weight: 600;
 }
 
+.tab-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.tab-btn:hover {
+    color: #1B1624;
+}
+
 /* ===========================
    SCROLL-TRIGGERED ANIMATIONS
 =========================== */
@@ -161,4 +175,55 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* ===========================
+   SKILL TAGS
+=========================== */
+.skill-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #FAF9F6;
+    color: #1B1624;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1.5px solid #E5E0D8;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   FOCUS STYLES (Accessibility)
+=========================== */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #f89f1b;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ===========================
+   MODAL BACKDROP
+=========================== */
+.modal-overlay {
+    transition: opacity 0.3s ease;
+}
+
+/* ===========================
+   RESPONSIVE FIXES
+=========================== */
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    .stat-card {
+        padding: 16px 12px;
+    }
+    .stat-label {
+        font-size: 0.7rem;
+    }
 }
